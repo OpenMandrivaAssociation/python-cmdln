@@ -8,7 +8,6 @@ License:	MIT License
 Group:		Development/Python
 URL:		http://code.google.com/p/cmdln/
 Source0:	http://cmdln.googlecode.com/files/%{rname}-%{version}.zip
-%py_requires -d
 BuildRequires:	python-setuptools
 BuildRoot:	%{_tmppath}/%{name}--%{version}-%{release}-root
 
@@ -39,7 +38,7 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files -f INSTALLED_FILES
+%files
 %defattr(-,root,root)
 %doc LICENSE.txt README.txt docs/ examples/
-
+%py_puresitedir/*
