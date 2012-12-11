@@ -42,3 +42,17 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc LICENSE.txt README.txt docs/ examples/
 %py_puresitedir/*
+
+
+%changelog
+* Sun Nov 07 2010 Funda Wang <fwang@mandriva.org> 1.1.2-1mdv2011.0
++ Revision: 594708
+- rebuild for py2.7
+
+* Fri Nov 06 2009 Oden Eriksson <oeriksson@mandriva.com> 1.1.2-1mdv2010.1
++ Revision: 461512
+- import python-cmdln
+
+
+* Fri Nov 06 2009 Oden Eriksson <oeriksson@mandriva.com> 1.1.2-1mdv2010.0
+- initial Mandriva package
