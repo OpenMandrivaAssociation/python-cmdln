@@ -2,13 +2,14 @@
 %define debug_package %{nil}
 
 Summary:	An improved cmd.py for easily building good multi-command scripts
+
 Name:		python-%{rname}
-Version:	1.1.2
-Release:	2
+Version:	1.3.0
+Release:	1
 License:	MIT License
 Group:		Development/Python
 URL:		http://code.google.com/p/cmdln/
-Source0:	http://cmdln.googlecode.com/files/%{rname}-%{version}.zip
+Source0:	https://github.com/trentm/cmdln/archive/dcf678068233bb4efd0449bcd003f3f435f49bd1/cmdln-1.3.0-dcf6780.tar.gz
 BuildRequires:	python-setuptools
 
 %description
@@ -25,10 +26,10 @@ good command documentation easier.
 %setup -q -n %{rname}-%{version}
 
 %build
-CFLAGS="%{optflags}" %{__python} setup.py build
+CFLAGS="%{optflags}" python setup.py build
 
 %install
-%{__python} setup.py install \
+python setup.py install \
     --root="%{buildroot}" \
     --prefix="%{_prefix}" \
     --record=INSTALLED_FILES
@@ -36,3 +37,4 @@ CFLAGS="%{optflags}" %{__python} setup.py build
 %files
 %doc LICENSE.txt README.txt docs/ examples/
 %{py_puresitedir}/*
+
