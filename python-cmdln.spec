@@ -23,7 +23,7 @@ good command documentation easier.
 
 %prep
 
-%setup -q -n %{rname}-%{version}
+%setup -qn cmdln-dcf678068233bb4efd0449bcd003f3f435f49bd1
 
 %build
 CFLAGS="%{optflags}" python setup.py build
