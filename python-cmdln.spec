@@ -35,6 +35,6 @@ python setup.py install \
     --record=INSTALLED_FILES
 
 %files
-%doc LICENSE.txt README.txt docs/ examples/
+%doc LICENSE.txt  docs/ examples/
 %{py_puresitedir}/*
 
