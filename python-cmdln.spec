@@ -5,7 +5,7 @@ Summary:	An improved cmd.py for easily building good multi-command scripts
 
 Name:		python-%{rname}
 Version:	1.3.0
-Release:	1
+Release:	2
 License:	MIT License
 Group:		Development/Python
 URL:		http://code.google.com/p/cmdln/
