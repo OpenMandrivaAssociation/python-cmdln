@@ -8,7 +8,7 @@ Version:	1.3.0
 Release:	2
 License:	MIT License
 Group:		Development/Python
-URL:		http://code.google.com/p/cmdln/
+URL:		https://code.google.com/p/cmdln/
 Source0:	https://github.com/trentm/cmdln/archive/dcf678068233bb4efd0449bcd003f3f435f49bd1/cmdln-1.3.0-dcf6780.tar.gz
 BuildRequires:	python-setuptools
 
